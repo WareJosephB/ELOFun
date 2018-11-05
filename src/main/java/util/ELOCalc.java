@@ -17,7 +17,7 @@ public class ELOCalc {
 		
 	}
 	
-	public void Victory(Player winner, Player loser, boolean Sevenballed) {
+	public static void Victory(Player winner, Player loser, boolean Sevenballed) {
 		UpdateELO(winner, loser, Sevenballed);
 	}
 	

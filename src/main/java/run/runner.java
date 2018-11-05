@@ -1,5 +1,10 @@
 package run;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 import util.ELOCalc;
 import util.Player;
 
@@ -16,6 +21,11 @@ public class runner {
 		Player lewis = new Player("Lewis");
 		Player lysien = new Player("Lysien");
 		Player naveed = new Player("Naveed");
+		Player mahamed = new Player("Mahamed");
+		Player dev = new Player("Dev");
+		Player matt = new Player("Matt");
+		Player vinul = new Player("Vinul");
+		Player daud = new Player("Daud");
 
 		ELOCalc.Victory(harrison, alvin);
 		ELOCalc.Victory(andy, gareth);
@@ -47,12 +57,30 @@ public class runner {
 		ELOCalc.Victory(harrison, andy);
 		ELOCalc.Victory(ben, harrison);
 		// End of day, 2nd November
+		
+		ELOCalc.Victory(mahamed, harrison);
+		ELOCalc.Victory(andy, lewis);
+		ELOCalc.Victory(gareth, joseph);
+		ELOCalc.Victory(alvin, harrison);
+		ELOCalc.Victory(lysien, daud, true);
+		ELOCalc.Victory(ben, joseph);
+		ELOCalc.Victory(ben, andy);
+		ELOCalc.Victory(harrison, naveed);
+		ELOCalc.Victory(andy, joseph);
+		ELOCalc.Victory(harrison, naveed);
+		ELOCalc.Victory(matt, andy);
+		ELOCalc.Victory(dev, joseph);
+		ELOCalc.Victory(harrison, vinul);
+		// End of day, 5th November
+		
 
-		Player[] playerList = new Player[] { alvin, andy, ben, gareth, harrison, joseph, lewis, lysien, naveed };
-
+		List<Player> playerList =Arrays.asList(  alvin, andy, ben, gareth, harrison, joseph, lewis, lysien, naveed, dev, vinul, daud, matt, mahamed );
+		Collections.sort(playerList, Comparator.comparing(i -> i.getELO()));
 		for (Player player : playerList) {
 			System.out.println(player);
 		}
+		
+		//System.out.println(ELOCalc.ExpectedScore(1859.54, 1454.42)*100);
 
 	}
 
