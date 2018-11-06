@@ -1,4 +1,4 @@
-package run;
+package runner;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -57,7 +57,7 @@ public class runner {
 		ELOCalc.Victory(harrison, andy);
 		ELOCalc.Victory(ben, harrison);
 		// End of day, 2nd November
-		
+
 		ELOCalc.Victory(mahamed, harrison);
 		ELOCalc.Victory(andy, lewis);
 		ELOCalc.Victory(gareth, joseph);
@@ -73,14 +73,18 @@ public class runner {
 		ELOCalc.Victory(harrison, vinul);
 		// End of day, 5th November
 		
+		ELOCalc.Victory(andy, gareth);
+		ELOCalc.Victory(ben, joseph);
+		// 6th November
 
-		List<Player> playerList =Arrays.asList(  alvin, andy, ben, gareth, harrison, joseph, lewis, lysien, naveed, dev, vinul, daud, matt, mahamed );
+		List<Player> playerList = Arrays.asList(alvin, andy, ben, gareth, harrison, joseph, lewis, lysien, naveed, dev,
+				vinul, daud, matt, mahamed);
 		Collections.sort(playerList, Comparator.comparing(i -> i.getELO()));
 		for (Player player : playerList) {
 			System.out.println(player);
 		}
-		
-		//System.out.println(ELOCalc.ExpectedScore(1859.54, 1454.42)*100);
+
+		// System.out.println(ELOCalc.ExpectedScore(1859.54, 1454.42)*100);
 
 	}
 
