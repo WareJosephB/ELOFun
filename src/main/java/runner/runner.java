@@ -1,4 +1,4 @@
-package run;
+package runner;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -58,7 +58,7 @@ public class runner {
 		ELOCalc.Victory(harrison, andy);
 		ELOCalc.Victory(ben, harrison);
 		// End of day, 2nd November
-		
+
 		ELOCalc.Victory(mahamed, harrison);
 		ELOCalc.Victory(andy, lewis);
 		ELOCalc.Victory(gareth, joseph);
@@ -90,8 +90,8 @@ public class runner {
 		for (Player player : playerList) {
 			System.out.println(player);
 		}
-		
-		//System.out.println(ELOCalc.ExpectedScore(1859.54, 1454.42)*100);
+
+		// System.out.println(ELOCalc.ExpectedScore(1859.54, 1454.42)*100);
 
 	}
 

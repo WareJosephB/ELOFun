@@ -17,22 +17,22 @@ public class Player {
 	public void playGame() {
 		this.gamesPlayed += 1;
 	}
-	
+
 	public double getELO() {
 		return this.ELO;
 	}
-	
+
 	public void setELO(double ELO) {
 		this.ELO = ELO;
 	}
-	
+
 	public String getName() {
 		return this.name;
 	}
-	
+
 	public String toString() {
 		DecimalFormat stripDecimal = new DecimalFormat("#.00");
 		return this.getName() + ": " + stripDecimal.format(this.getELO()) + " from " +String.valueOf(this.gamesPlayed) + " games played.";
 	}
-	
+
 }
