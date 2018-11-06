@@ -26,6 +26,7 @@ public class runner {
 		Player matt = new Player("Matt");
 		Player vinul = new Player("Vinul");
 		Player daud = new Player("Daud");
+		Player malcolm = new Player("Malcolm");
 
 		ELOCalc.Victory(harrison, alvin);
 		ELOCalc.Victory(andy, gareth);
@@ -73,8 +74,18 @@ public class runner {
 		ELOCalc.Victory(harrison, vinul);
 		// End of day, 5th November
 		
+		ELOCalc.Victory(andy, gareth);
+		ELOCalc.Victory(ben, joseph);
+		ELOCalc.Victory(joseph, malcolm);
+		ELOCalc.Victory(naveed, daud);
+		ELOCalc.Victory(joseph, naveed);
+		//End of day, 6th November
 
-		List<Player> playerList =Arrays.asList(  alvin, andy, ben, gareth, harrison, joseph, lewis, lysien, naveed, dev, vinul, daud, matt, mahamed );
+
+
+
+
+		List<Player> playerList =Arrays.asList(  alvin, andy, ben, gareth, harrison, joseph, lewis, lysien, naveed, dev, vinul, daud, matt, mahamed, malcolm );
 		Collections.sort(playerList, Comparator.comparing(i -> i.getELO()));
 		for (Player player : playerList) {
 			System.out.println(player);

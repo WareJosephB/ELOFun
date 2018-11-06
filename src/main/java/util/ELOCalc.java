@@ -29,6 +29,8 @@ public class ELOCalc {
 			K = 16;
 		}
 		double temp = winner.getELO();
+		winner.playGame();
+		loser.playGame();
 		winner.setELO(ELOChange(winner.getELO(), loser.getELO(), 1, K));
 		loser.setELO(ELOChange(loser.getELO(), temp, 0, K));
 	}
