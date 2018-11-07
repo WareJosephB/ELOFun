@@ -87,7 +87,6 @@ public class runner {
 		ELOCalc.Victory(ben, dev);
 		//End of day, 7th November
 
-
 		
 		
 		List<Player> playerList =Arrays.asList(alvin, andy, ben, gareth, harrison, joseph, lewis, lysien, naveed, dev, vinul, daud, matt, mahamed, malcolm);
