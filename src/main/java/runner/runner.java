@@ -80,6 +80,9 @@ public class runner {
 		ELOCalc.Victory(naveed, daud);
 		ELOCalc.Victory(joseph, naveed);
 		//End of day, 6th November
+		
+		ELOCalc.Victory(alvin, harrison);
+		ELOCalc.Victory(lewis, malcolm);
 
 
 
