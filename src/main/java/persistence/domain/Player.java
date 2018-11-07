@@ -1,6 +1,5 @@
 package persistence.domain;
 
-import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -38,7 +37,7 @@ public class Player {
 	}
 
 	public void setELO(double ELO) {
-		ELO = ELO;
+		this.ELO = ELO;
 	}
 
 }

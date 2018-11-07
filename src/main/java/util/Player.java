@@ -32,7 +32,7 @@ public class Player {
 
 	public String toString() {
 		DecimalFormat stripDecimal = new DecimalFormat("#.00");
-		return this.getName() + ": " + stripDecimal.format(this.getELO()) + " from " +String.valueOf(this.gamesPlayed) + " games played.";
+		return this.getName() + ": " + stripDecimal.format(this.getELO())+ " from " +String.valueOf(this.gamesPlayed) + " games played.";
 	}
 
 }
