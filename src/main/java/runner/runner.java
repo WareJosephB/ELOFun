@@ -87,7 +87,10 @@ public class runner {
 		ELOCalc.Victory(ben, dev);
 		//End of day, 7th November
 
-		
+		ELOCalc.Victory(andy, joseph);
+		ELOCalc.Victory(ben, gareth);
+		ELOCalc.Victory(alvin, harrison);
+		ELOCalc.Victory(andy, ben);
 		
 		List<Player> playerList =Arrays.asList(alvin, andy, ben, gareth, harrison, joseph, lewis, lysien, naveed, dev, vinul, daud, matt, mahamed, malcolm);
 		Collections.sort(playerList, Comparator.comparing(i -> -i.getELO()));
